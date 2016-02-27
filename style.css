@@ -1,0 +1,212 @@
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 780px) {
+}
+
+body {
+  font-family: 'Roboto';
+}
+h2 {
+  font-size: 1.25em;
+}
+header {
+  padding: 1em;
+  text-align: right;
+}
+header h1 {
+  margin-bottom: 0;
+}
+header p {
+  margin-top: 0.5em;
+}
+main {
+  margin: auto;
+  max-width: 800px;
+}
+section {
+  margin-top: 3em;
+}
+section h1 {
+  text-align: left;
+}
+section h1::before {
+  color: #0091EA;
+  content: '$ ';
+}
+section h1::after {
+  animation: blink-animation 1s steps(2, start) infinite;;
+  color: #0091EA;
+  content: ' _';
+}
+
+#experience {
+  text-align: center;
+}
+#experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+#experience li::after {
+  color: #9E9E9E;
+  content: '·\A·\A·';
+  font-size: 1.25em;
+  white-space: pre;
+}
+#experience li:last-child::after {
+  content: '';
+}
+#experience p {
+  display: inline-block;
+}
+#experience .date {
+  font-size: 1.25em;
+}
+#experience .employer {
+  color: #9E9E9E;
+}
+#experience .employer::before {
+  color: black;
+  content: 'chez ';
+}
+#interests > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#interests > ul > li {
+  flex: 1;
+  min-width: 200px;
+}
+#interests h2 {
+  text-align: center;
+}
+#interests li {
+  list-style-type: none;
+  text-align: center;
+}
+#interests ul {
+  padding: 0;
+  width: 100%;
+}
+#photo {
+  border: 1px dashed #9E9E9E;
+  box-shadow: 0 0 5em #9E9E9E;
+  float: right;
+  margin: 1em;
+}
+#presentation {
+  clear: both;
+}
+#presentation p {
+  text-align: justify;
+}
+#realisations li::before {
+  color: #0091EA;
+  content: '/';
+  font-size: 1.2em;
+}
+#realisations li {
+  list-style-type: none;
+}
+#skills > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+#skills > ul > li {
+  flex: 1;
+  list-style-type: none;
+  min-width: 250px;
+}
+#skills > ul > li > h2 {
+  text-align: center;
+}
+#skills > ul ul > li::before {
+  bottom: 0;
+  left: -0.5em;
+  color: #0091EA;
+  content: '/';
+  position: absolute;
+  font-size: 1.2em;
+}
+#skills > ul ul > li {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+#skills > ul ul > li > div {
+  flex: 1;
+}
+#skills > ul ul > li > div:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0.35em;
+}
+#strengths {
+  text-align: center;
+}
+#strengths ul {
+  padding: 0;
+  width: 100%;
+}
+#strengths li {
+  font-size: 1.25em;
+  margin-top: 1em;
+  list-style-type: none;
+  transition: all 0.2s ease-in-out;
+}
+#strengths li:hover {
+  color: #0091EA;
+  cursor: default;
+  transform: scale(1, 1.2);
+}
+
+.android {
+  color: #8BC34A;
+}
+.email {
+  color: #9E9E9E;
+}
+.playstore {
+  background-image: url('images/google-play.png');
+  background-size: 1em 1em;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.position {
+  color: #0091EA;
+}
+.item-level {
+  display: inline-block;
+}
+.item-name {
+  display: inline-block;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+.item-type {
+  display: inline-block;
+  text-transform: lowercase;
+}
+.phone {
+  color: #9E9E9E;
+}
+.star {
+  background-repeat: no-repeat;
+  background-size: 0.9em 0.9em;
+  display: inline-block;
+  height: 0.9em;
+  width: 0.9em;
+}
+.star.off {
+  background-image: url('images/gray-star.png');
+}
+.star.on {
+  background-image: url('images/yellow-star.png');
+}
