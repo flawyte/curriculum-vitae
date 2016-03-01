@@ -53,7 +53,7 @@ section h1::after {
   list-style-type: none;
   padding: 0;
 }
-#experience li::after {
+#experience > ul > li::after {
   color: #9E9E9E;
   content: '·\A·\A·';
   font-size: 1.25em;
@@ -67,6 +67,16 @@ section h1::after {
 }
 #experience .date {
   font-size: 1.25em;
+}
+#experience .description {
+  display: block;
+}
+#experience .tasks {
+  margin-bottom: 1em;
+}
+#experience .tasks li::before {
+  color: black;
+  content: '* ';
 }
 #experience .employer {
   color: #9E9E9E;
