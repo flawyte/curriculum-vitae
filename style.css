@@ -33,6 +33,9 @@ main {
 section {
   margin-top: 3em;
 }
+section > p {
+  text-align: justify;
+}
 section h1 {
   text-align: left;
 }
@@ -46,45 +49,6 @@ section h1::after {
   content: ' _';
 }
 
-#experience {
-  text-align: center;
-}
-#experience ul {
-  list-style-type: none;
-  padding: 0;
-}
-#experience > ul > li::after {
-  color: #9E9E9E;
-  content: '·\A·\A·';
-  font-size: 1.25em;
-  white-space: pre;
-}
-#experience li:last-child::after {
-  content: '';
-}
-#experience p {
-  display: inline-block;
-}
-#experience .date {
-  font-size: 1.25em;
-}
-#experience .description {
-  display: block;
-}
-#experience .tasks {
-  margin-bottom: 1em;
-}
-#experience .tasks li::before {
-  color: black;
-  content: '* ';
-}
-#experience .employer {
-  color: #9E9E9E;
-}
-#experience .employer::before {
-  color: black;
-  content: 'chez ';
-}
 #interests > ul {
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +68,45 @@ section h1::after {
   padding: 0;
   width: 100%;
 }
+#personal-experience {
+  text-align: center;
+}
+#personal-experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+#personal-experience > ul > li::after {
+  color: #9E9E9E;
+  content: '·\A·\A·';
+  font-size: 1.25em;
+  white-space: pre;
+}
+#personal-experience li:last-child::after {
+  content: '';
+}
+#personal-experience p {
+  display: inline-block;
+}
+#personal-experience .date {
+  font-size: 1.25em;
+}
+#personal-experience .description {
+  display: block;
+}
+#personal-experience .tasks {
+  margin-bottom: 1em;
+}
+#personal-experience .tasks li::before {
+  color: black;
+  content: '* ';
+}
+#personal-experience .technos {
+  margin-bottom: 1em;
+}
+#personal-experience .technos li::before {
+  color: black;
+  content: '* ';
+}
 #photo {
   border: 1px dashed #9E9E9E;
   box-shadow: 0 0 5em #9E9E9E;
@@ -113,8 +116,51 @@ section h1::after {
 #presentation {
   clear: both;
 }
-#presentation p {
-  text-align: justify;
+#professional-experience {
+  text-align: center;
+}
+#professional-experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+#professional-experience > ul > li::after {
+  color: #9E9E9E;
+  content: '·\A·\A·';
+  font-size: 1.25em;
+  white-space: pre;
+}
+#professional-experience li:last-child::after {
+  content: '';
+}
+#professional-experience p {
+  display: inline-block;
+}
+#professional-experience .date {
+  font-size: 1.25em;
+}
+#professional-experience .description {
+  display: block;
+}
+#professional-experience .tasks {
+  margin-bottom: 1em;
+}
+#professional-experience .tasks li::before {
+  color: black;
+  content: '* ';
+}
+#professional-experience .technos {
+  margin-bottom: 1em;
+}
+#professional-experience .technos li::before {
+  color: black;
+  content: '* ';
+}
+#professional-experience .employer {
+  color: #9E9E9E;
+}
+#professional-experience .employer::before {
+  color: black;
+  content: 'chez ';
 }
 #realisations li::before {
   color: #0091EA;
@@ -182,18 +228,11 @@ section h1::after {
 .android {
   color: #8BC34A;
 }
+.github {
+  background-image: url('http://cdn.instantlogosearch.com/svg/svgporn/github-icon.svg');
+}
 .email {
   color: #9E9E9E;
-}
-.playstore {
-  background-image: url('images/google-play.png');
-  background-size: 1em 1em;
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-}
-.position {
-  color: #0091EA;
 }
 .item-level {
   display: inline-block;
@@ -208,8 +247,34 @@ section h1::after {
   display: inline-block;
   text-transform: lowercase;
 }
+.linkedin {
+  background-image: url('http://cdn.instantlogosearch.com/svg/shgysk8zer0-logos/linkedin.svg');
+}
+.links a {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+}
 .phone {
   color: #9E9E9E;
+}
+.playstore {
+  background-image: url('images/google-play.png');
+  background-size: 1em 1em;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.position {
+  color: #0091EA;
+}
+.stackoverflow {
+  background-image: url('http://cdn.instantlogosearch.com/svg/svgporn/stackoverflow.svg');
+  background-size: contain !important;
+  width: 6.5em !important;
 }
 .star {
   background-repeat: no-repeat;
